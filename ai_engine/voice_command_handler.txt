@@ -1,0 +1,25 @@
+# voice_command_handler.py
+# Author: Hemendra
+# Description: Processes voice commands and triggers robot actions (mock implementations)
+
+def handle_command(command: str) -> str:
+    """
+    Simulate handling of voice commands for humanoid robot.
+    Extend this function as more commands become supported.
+    """
+    command = command.lower()
+    print(f"[Command Handler] Processing command: {command}")
+
+    if "clean" in command:
+        # Add cleaning logic here
+        return "Initiating cleaning routine."
+    elif "sort" in command:
+        # Add sorting logic here
+        return "Sorting objects now."
+    elif "write" in command:
+        # Add writing logic here
+        return "Getting ready to write."
+    elif "status" in command:
+        return "All systems operational."
+    else:
+        return "Command not recognized. Please try again."
